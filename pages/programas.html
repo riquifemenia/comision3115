@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="../assets/css/styles.css">
 
@@ -73,7 +73,7 @@
     <main id="programas__principal">
 
         <section id="programas__logo" class="secciones__logo">
-            <div class="logo logo--contenedor">
+            <div class="logo logo--contenedor wow animate__animated animate__slideInLeft">
                 <a href="../index.html"><img class="logo logo--investigacion" src="../assets/img/logo-investigacion.png"
                         alt="Logo innovación"></a>
                 <a><img class="logo logo--viareggio" src="../assets/img/logo-negro.png" alt="Logo Viareggio"></a>
@@ -82,7 +82,9 @@
 
         <section id="programas__inicio" class="secciones__inicio container-fluid">
             <div class="row color--negro">
-                <h1>Programas estratégicos</h1>
+                <div class="col mt-5">
+                    <h1>Programas estratégicos</h1>
+                </div>
             </div>
         </section>
 
@@ -97,7 +99,8 @@
                     </div>
                     <div class="row">
                         <div class="col-10 offset-1 col-md-6 offset-md-3">
-                            <button type="button" class="btn boton--descubrir">Descubrir</button>
+                            <button onclick="location.href='../pages/programas-texto.html#programas__texto__industria'"
+                                type="button" class="btn boton--descubrir">Descubrir</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +113,7 @@
             </div>
         </section>
 
-        <section id="programas__industria" class="container-fluid general__secciones color--fondo--blanco pt-5">
+        <section id="programas__sustentabilidad" class="container-fluid general__secciones color--fondo--blanco pt-5">
             <div class="row align-items-center general__secciones--contenido color--negro">
                 <div class="col-6 offset-3 col-md-2 offset-md-3 order-2 order-md-1">
                     <div class="row">
@@ -121,7 +124,9 @@
                     </div>
                     <div class="row">
                         <div class="col-10 offset-1 col-md-6 offset-md-3">
-                            <button type="button" class="btn boton--descubrir">Descubrir</button>
+                            <button
+                                onclick="location.href='../pages/programas-texto.html#programas__texto__sustentabilidad'"
+                                type="button" class="btn boton--descubrir">Descubrir</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +139,7 @@
             </div>
         </section>
 
-        <section id="programas__industria" class="container-fluid general__secciones color--fondo--blanco pt-5">
+        <section id="programas__climatico" class="container-fluid general__secciones color--fondo--blanco pt-5">
             <div class="row align-items-center general__secciones--contenido color--negro">
                 <div class="col-6 offset-3 col-md-2 offset-md-3 order-2 order-md-1">
                     <div class="row">
@@ -145,7 +150,8 @@
                     </div>
                     <div class="row">
                         <div class="col-10 offset-1 col-md-6 offset-md-3">
-                            <button type="button" class="btn boton--descubrir">Descubrir</button>
+                            <button onclick="location.href='../pages/programas-texto.html#programas__texto__climatico'"
+                                type="button" class="btn boton--descubrir">Descubrir</button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +166,7 @@
 
     </main>
 
-    <footer id="pie" class="fuente--grande negro color--fondo--blanco">
+    <footer id="index__pie" class="fuente--grande negro color--fondo--blanco wow animate__animated animate__fadeIn">
 
         <div class="row">
             <div class="col-12 col-md-4 offset-md-2 col-lg-2 offset-lg-2 order-1 order-lg-1 pie--elemento">
@@ -208,7 +214,7 @@
                 <div class="col-10 offset-1 pie--disclaimer--texto">
                     <p>2022 - Versión con fines educativos, sólo para su viasualización dentro de la plataforma de
                         CoderHouse.</p>
-                    <p>Wireframe y sitio creados a partir de imágenes y colores de un proyecto de diseño previo.</p>
+                    <p>Wireframe y sitio basado en imágenes y colores existentes en un proyecto previo.</p>
                     <p>Las marcas y logotipos no son reales</p>
                 </div>
             </div>
@@ -216,8 +222,10 @@
 
     </footer>
 
-    <script src="js/wow.min.js"></script>
-    <script> new WOW().init(); </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

@@ -51,13 +51,13 @@
                                 <a href="../pages/programas.html">Programas estratégicos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/innovacion.html">Innovación en acción</a>
+                                <a class="nav-link disabled" href="#">Innovación en acción</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../pages/infraestructura.html">Infraestructura y tecnología</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../pages/equipo.html">Equipo humano</a>
+                                <a class="nav-link disabled" href="#">Equipo humano</a>
                             </li>
                             <hr>
                             <li class="nav-item">
@@ -70,13 +70,63 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contacto__principal">
 
+        <section id="contacto__logo" class="secciones__logo">
+            <div class="logo logo--contenedor wow animate__animated animate__slideInLeft">
+                <a href="../index.html"><img class="logo logo--investigacion" src="../assets/img/logo-investigacion.png"
+                        alt="Logo innovación"></a>
+                <a><img class="logo logo--viareggio" src="../assets/img/logo-negro.png" alt="Logo Viareggio"></a>
+            </div>
+        </section>
 
+        <section id="contacto__inicio" class="secciones__inicio container-fluid">
+            <div class="row color--negro">
+                <div class="col mt-5">
+                    <h1>Contacto</h1>
+                </div>
+            </div>
+        </section>
 
+        <section id="contacto__formulario" class="container-fluid contacto__secciones color--fondo--blanco pt-5">
+            <div class="row align-items-center contacto__secciones--contenido color--gris">
+                <div class="col-10 offset-1 col-lg-5 offset-lg-1 order-2 order-lg-1">
+                    <div class="row">
+                        <p>Agradecemos tus comentarios</p>
+                    </div>
+                    <div class="row mt-5 fuente--mediana">
+                        <form>
+                            <div class="col-12 contacto__secciones__formulario">
+                                <label for="nombre" hidden>Nombre</label>
+                                <input id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-12 contacto__secciones__formulario">
+                                <label for="email" hidden>Email</label>
+                                <input id="email" type="email" placeholder="Mail">
+                            </div>
+
+                            <div class="col-12 contacto__secciones__formulario">
+                                <label for=" mensaje" hidden>Mensaje</label>
+                                <textarea id="mensaje" placeholder="Tus intereses"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input id="contacto--submit" class="btn boton--enviar" type="submit" value="Enviar">
+                                <input id="contacto--cancelar" class="btn boton--enviar" type="reset" value="Cancelar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2 my-5">
+                    <div class="contacto__secciones--contenido--imagenes">
+                        <a><img class="contacto__secciones--contenido--imagen" src="../assets/img/contacto.png"
+                                alt="Imagen programas"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer id="pie" class="fuente--grande negro color--fondo--blanco">
+    <footer id="index__pie" class="fuente--grande negro color--fondo--blanco wow animate__animated animate__fadeIn">
 
         <div class="row">
             <div class="col-12 col-md-4 offset-md-2 col-lg-2 offset-lg-2 order-1 order-lg-1 pie--elemento">
@@ -104,13 +154,13 @@
                         <a class="nav-link" href="../pages/programas.html">Programas estratégicos</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 pie--link">
-                        <a class="nav-link" href="../pages/innovacion.html">Innovación en acción</a>
+                        <a>Innovación en acción</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 pie--link">
                         <a class="nav-link" href="../pages/infraestructura.html">Infraestructura y tecnología</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 pie--link">
-                        <a class="nav-link" href="../pages/equipo.html">Equipo humano</a>
+                        <a>Equipo humano</a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 pie--link">
                         <a class="nav-link" aria-current="page" href="#">Contacto</a>
@@ -124,7 +174,8 @@
                 <div class="col-10 offset-1 pie--disclaimer--texto">
                     <p>2022 - Versión con fines educativos, sólo para su viasualización dentro de la plataforma de
                         CoderHouse.</p>
-                    <p>Creado a partir de imágenes y colores de un proyecto de diseño existente.</p>
+                    <p>Wireframe y sitio basado en imágenes y colores existentes en un proyecto previo.</p>
+                    <p>Las marcas y logotipos no son reales</p>
                 </div>
             </div>
         </div>
