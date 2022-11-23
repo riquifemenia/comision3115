@@ -1,0 +1,63 @@
+.contacto__secciones {
+    margin-top: 25em;
+    height: 60rem;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .contacto__secciones {
+        height: 80rem;
+    }
+}
+
+.contacto__secciones--contenido {
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+
+.contacto__secciones__formulario input {
+    width: 95%;
+    height: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: 1px solid #777777;
+    outline: none;
+}
+
+.contacto__secciones__formulario textarea {
+    width: 95%;
+    height: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 100;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 1px solid #777777;
+    outline: none;
+}
+
+.contacto__secciones--contenido--imagenes {
+    display: none;
+    height: 20rem;
+}
+
+@media screen and (min-width: 992px) {
+    .contacto__secciones--contenido--imagenes {
+        display: flex;
+        justify-content: left;
+        height: 60rem;
+
+    }
+}
+
+.contacto__secciones--contenido--imagen {
+    height: 60rem;
+}
+
+.contacto__secciones--contenido--imagen:hover {
+    transform: scale(1.03);
+}

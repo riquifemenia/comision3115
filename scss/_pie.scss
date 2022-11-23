@@ -1,0 +1,73 @@
+.pie--elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.pie--boton {
+    height: 4rem;
+    width: 24rem;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 1.6rem;
+}
+
+.pie--boton:hover {
+    color: #ffffff;
+    background-color: #777777;
+    border-color: #777777;
+}
+
+.pie--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+    color: #000000;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+    .pie--link {
+        justify-content: left;
+        font-size: 1.2rem;
+        color: #777777;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .pie--link {
+        justify-content: left;
+        font-size: 1.2rem;
+        color: #777777;
+        text-decoration: none;
+    }
+}
+
+.pie--link a {
+    text-decoration: none;
+}
+
+.pie--disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.pie--disclaimer--texto {
+    text-align: center;
+    padding-top: 0;
+}
+
+.pie--disclaimer--texto p {
+    text-align: center;
+    margin-bottom: 0;
+}
