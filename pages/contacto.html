@@ -21,17 +21,17 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Bodega Viareggio</title>
+    <title>Bodega Viareggio - Contacto</title>
     <link rel="icon" type="image/png" href="../assets/img/icono.png">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar fuente--grande blanco">
+        <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler mt-3 me-3" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -70,83 +70,78 @@
         </nav>
     </header>
 
-    <main id="contacto__principal">
+    <section id="contacto__logo" class="secciones__logo">
+        <div class="pt-4">
+            <a class="logo animate__animated animate__fadeIn" href="../index.html"><img class="logo--investigacion"
+                    src="../assets/img/logo-investigacion.png" alt="Logo investigación">
+                <img class="logo--viareggio" src="../assets/img/logo-negro.png" alt="Logo Viareggio"></a>
+        </div>
+    </section>
 
-        <section id="contacto__logo" class="secciones__logo">
-            <div class="logo logo--contenedor wow animate__animated animate__slideInLeft">
-                <a href="../index.html"><img class="logo logo--investigacion" src="../assets/img/logo-investigacion.png"
-                        alt="Logo innovación"></a>
-                <a><img class="logo logo--viareggio" src="../assets/img/logo-negro.png" alt="Logo Viareggio"></a>
+    <section id="contacto__inicio" class="secciones__inicio container-fluid">
+        <div class="row">
+            <div class="col mt-5">
+                <h1>Contacto</h1>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contacto__inicio" class="secciones__inicio container-fluid">
-            <div class="row color--negro">
-                <div class="col mt-5">
-                    <h1>Contacto</h1>
+    <main id="contacto__formulario" class="container-fluid contacto__secciones pt-5">
+        <div class="row align-items-center">
+            <div class="col-10 offset-1 col-lg-5 offset-lg-1 order-2 order-lg-1">
+                <div class="row">
+                    <h3>Agradecemos tus comentarios</h3>
+                </div>
+                <div class="row mt-5">
+                    <form>
+                        <div class="col-12 contacto__secciones__formulario">
+                            <label for="nombre" hidden>Nombre</label>
+                            <input id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-12 contacto__secciones__formulario">
+                            <label for="email" hidden>Email</label>
+                            <input id="email" type="email" placeholder="Mail">
+                        </div>
+
+                        <div class="col-12 contacto__secciones__formulario">
+                            <label for="mensaje" hidden>Mensaje</label>
+                            <textarea id="mensaje" placeholder="Tus intereses"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input id="contacto--submit" class="btn boton--enviar" type="submit" value="Enviar">
+                            <input id="contacto--cancelar" class="btn boton--enviar" type="reset" value="Cancelar">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <section id="contacto__formulario" class="container-fluid contacto__secciones color--fondo--blanco pt-5">
-            <div class="row align-items-center contacto__secciones--contenido color--gris">
-                <div class="col-10 offset-1 col-lg-5 offset-lg-1 order-2 order-lg-1">
-                    <div class="row">
-                        <p>Agradecemos tus comentarios</p>
-                    </div>
-                    <div class="row mt-5 fuente--mediana">
-                        <form>
-                            <div class="col-12 contacto__secciones__formulario">
-                                <label for="nombre" hidden>Nombre</label>
-                                <input id="nombre" placeholder="Nombre">
-                            </div>
-                            <div class="col-12 contacto__secciones__formulario">
-                                <label for="email" hidden>Email</label>
-                                <input id="email" type="email" placeholder="Mail">
-                            </div>
-
-                            <div class="col-12 contacto__secciones__formulario">
-                                <label for=" mensaje" hidden>Mensaje</label>
-                                <textarea id="mensaje" placeholder="Tus intereses"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <input id="contacto--submit" class="btn boton--enviar" type="submit" value="Enviar">
-                                <input id="contacto--cancelar" class="btn boton--enviar" type="reset" value="Cancelar">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2 my-5">
-                    <div class="contacto__secciones--contenido--imagenes">
-                        <a><img class="contacto__secciones--contenido--imagen" src="../assets/img/contacto.png"
-                                alt="Imagen programas"></a>
-                    </div>
+            <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2 my-5">
+                <div class="contacto__secciones--contenido--contenedor--imagenes">
+                    <a><img class="contacto__secciones--contenido--imagen" src="../assets/img/contacto.png"
+                            alt="Imagen contacto"></a>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer id="index__pie" class="fuente--grande negro color--fondo--blanco wow animate__animated animate__fadeIn">
+    <footer id="contacto__pie" class="container-fluid pie wow animate__animated animate__fadeIn">
 
         <div class="row">
-            <div class="col-12 col-md-4 offset-md-2 col-lg-2 offset-lg-2 order-1 order-lg-1 pie--elemento">
+            <div class="col-12 col-md-2 offset-md-2 col-lg-3 offset-lg-1 order-1 order-lg-1 pie--elemento">
                 <button type="button" class="btn pie--boton">Suscribirse al Newsletter</button>
             </div>
 
-            <div class="col-12 col-md-12 col-lg-4 pie--elemento order-3 order-lg-2">
-                <a><img class="logo logo--investigacion" src="../assets/img/logo-investigacion.png"
-                        alt="Logo Viareggio"></a>
+            <div class="col-12 col-md-4 col-lg-4 order-3 order-md-2 pie--elemento ">
+                <a><img class="pie--logo" src="../assets/img/logo-investigacion.png" alt="Logo Viareggio"></a>
             </div>
 
-            <div class="col-12 col-md-4 col-lg-2 pie--elemento order-2 order-lg-3">
+            <div class="col-12 col-md-2 col-lg-3 order-2 order-md-3 pie--elemento">
                 <button type="button" class="btn pie--boton">¿Cómo llegar?</button>
             </div>
-
         </div>
 
         <div class="row">
-            <div class="col-md-9 offset-md-2">
-                <div class="row pie--link">
+            <div class="col-md-8 offset-md-2">
+                <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 pie--link">
                         <a class="nav-link" href="../index.html">Home</a>
                     </div>
@@ -182,12 +177,14 @@
 
     </footer>
 
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

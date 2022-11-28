@@ -9,30 +9,22 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
+    font-family: $fuente-principal;
+    background-color: map-get($color, $key: 3);
 }
 
 header {
-    position: absolute;
-    padding: 1.5rem;
-    position: fixed;
-    top: 0;
-    height: 6rem;
+    height: 0rem;
     width: 100%;
     z-index: 1;
     background-color: transparent;
-}
-
-main {
-    padding-top: 2rem;
 }
 
 footer {
     height: 14rem;
     width: 100%;
     z-index: 1;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid map-get($color, $key: 6);
     padding-top: 4rem;
 }
 
@@ -53,46 +45,77 @@ img {
     max-width: 100%;
 }
 
-
-.nav-link.active {
-    color: whitesmoke !important;
-    /*se agrega important para sobreescribir clase de bootstrap*/
-    font-weight: bolder;
-    font-size: 2.3rem;
+.navbar {
+    font-size: $fuente-grande;
+    color: map-get($color, $key: 3);
 }
 
-.nav-link.disabled {
-    color: #d0d0d0;
+.nav-link {
+    &.active {
+        color: map-get($color, $key: 3) !important;
+        /*se agrega important para sobreescribir clase de bootstrap*/
+        font-weight: bolder;
+        font-size: 2.3rem;
+    }
+
+    &.disabled {
+        color: map-get($color, $key: 5);
+    }
 }
 
-.menu li {
-    display: inline;
-    margin-right: 2.5rem;
-    width: 100%;
+.navbar-toggler-icon {
+    background-image: none !important;
+    background-color: map-get($color, $key: 2);
+    height: 3px;
+    width: 30px;
+    margin: 10px 0;
+    position: relative;
+    transform-origin: center;
+
+    &::before {
+        display: block;
+        background-color: map-get($color, $key: 2);
+        height: 3px;
+        content: "";
+        position: relative;
+        top: -9px;
+        transform-origin: center;
+    }
+
+    &::after {
+        display: block;
+        background-color: map-get($color, $key: 2);
+        height: 3px;
+        content: "";
+        position: relative;
+        top: 6px;
+        transform-origin: center;
+    }
 }
 
-.menu li a {
-    padding: 0.5rem;
-    text-decoration: none;
-    color: whitesmoke;
-}
+.menu {
+    li {
+        display: inline;
+        margin-right: 2.5rem;
+        width: 100%;
 
-.menu li a:hover {
-    text-decoration: none;
-    color: lightblue;
-    transition: all 1s;
-}
+        a {
+            padding: 0.5rem;
+            text-decoration: none;
+            color: map-get($color, $key: 3);
 
-.logo--contenedor {
-    padding-top: 5rem;
-    display: flex;
-    align-items: center;
+            &:hover {
+                text-decoration: none;
+                color: map-get($color, $key: 1);
+                transition: all 1s;
+            }
+        }
+    }
 }
 
 .logo {
-    height: 3rem;
-    float: left;
-    margin-left: 1rem;
+    height: 4rem;
+    margin-left: 3rem;
 }
 
 .logo--investigacion {
@@ -101,51 +124,97 @@ img {
 
 .logo--viareggio {
     height: 3rem;
+    margin-left: 1rem;
+}
+
+.boton {
+    height: 4rem;
+    width: 9rem;
+    border-radius: 1.6rem;
 }
 
 .boton--descubrir {
-    height: 4rem;
-    width: 9rem;
-    background-color: #ffffff;
-    border-color: #ff5b35;
-    border-radius: 1.6rem;
-}
+    @extend .boton;
+    border-color: map-get($color, $key: 6);
+    background-color: map-get($color, $key: 3);
 
-.boton--descubrir:hover {
-    border-color: #ff5b35;
-    background-color: #f5f5f5;
+    &:hover {
+        border-color: map-get($color, $key: 6);
+        background-color: map-get($color, $key: 4);
+    }
 }
 
 .boton--enviar {
-    height: 4rem;
-    width: 9rem;
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
-    border-radius: 1.6rem;
-    color: #777777;
+    @extend .boton;
+    color: map-get($color, $key: 2);
+    background-color: map-get($color, $key: 3);
+    border-color: map-get($color, $key: 6);
+
+    &:hover {
+        color: map-get($color, $key: 2);
+        background-color: map-get($color, $key: 4);
+        border-color: map-get($color, $key: 6);
+    }
 }
 
-.boton--enviar:hover {
-    background-color: #f5f5f5;
-    color: #000000;
-}
-
-.general__secciones {
+.secciones {
     height: auto;
     font-style: normal;
     font-weight: 50;
     font-size: 10px;
     text-align: center;
-    padding-bottom: 14rem;
-}
+    background-color: map-get($color, $key: 3);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 
-@media screen and (min-width: 767px) {
-    .general__secciones {
+    @include tablet {
         height: auto;
     }
 }
 
-.general__secciones--texto {
+.secciones__inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 12px;
+    text-align: center;
+    color: map-get($color, $key: 1);
+}
+
+.secciones__inicio--texto {
+    font-size: $fuente-grande;
+    color: map-get($color, $key: 2);
+}
+
+.secciones--contenido {
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: map-get($color, $key: 1);
+}
+
+.secciones--contenido--imagenes {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+
+    @include tablet {
+        justify-content: left;
+    }
+}
+
+.secciones--contenido--imagen {
+    height: 30rem;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.secciones--contenido--texto {
     height: auto;
     font-style: normal;
     font-weight: 50;
@@ -154,43 +223,14 @@ img {
     padding-bottom: 10rem;
 }
 
-.general__secciones--contenido {
-    font-weight: 500;
-    font-size: 2.8rem;
+.fuente--grande {
+    font-size: $fuente-grande;
 }
 
-.general__secciones--contenido--imagenes {
-    display: flex;
-    justify-content: center;
-    height: 30rem;
+.fuente--mediana {
+    font-size: $fuente-mediana;
 }
 
-@media screen and (min-width: 767px) {
-    .general__secciones--contenido--imagenes {
-        justify-content: left;
-    }
-}
-
-.general__secciones--contenido--imagen {
-    height: 30rem;
-}
-
-.general__secciones--contenido--imagen:hover {
-    transform: scale(1.03);
-}
-
-.secciones__inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70rem;
-    font-style: normal;
-    font-weight: 50;
-    font-size: 12px;
-    text-align: center;
-}
-
-.animate__animated.animate__fadeIn {
-    --animate-duration: 4s;
+.fuente--chica {
+    font-size: $fuente-chica;
 }
