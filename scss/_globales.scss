@@ -46,8 +46,12 @@ img {
 }
 
 .navbar {
-    font-size: $fuente-grande;
+    font-size: $fuente-mediana;
     color: map-get($color, $key: 3);
+}
+
+.navbar-toggler:hover {
+    background-color: map-get($color, $key: 5);
 }
 
 .nav-link {
@@ -55,7 +59,7 @@ img {
         color: map-get($color, $key: 3) !important;
         /*se agrega important para sobreescribir clase de bootstrap*/
         font-weight: bolder;
-        font-size: 2.3rem;
+        font-size: $fuente-mediana*1.2;
     }
 
     &.disabled {
