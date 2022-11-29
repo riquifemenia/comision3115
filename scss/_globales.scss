@@ -34,7 +34,7 @@ h1 {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2.4em;
 }
 
 p {
@@ -114,17 +114,34 @@ img {
 }
 
 .logo {
-    height: 4rem;
-    margin-left: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .logo--investigacion {
-    height: 6rem;
+    height: 5rem;
+
+    @include tablet {
+        height: 5.5em;
+    }
+
+    @include desktop {
+        height: 6em;
+    }
 }
 
 .logo--viareggio {
-    height: 3rem;
+    height: 2.4rem;
     margin-left: 1rem;
+
+    @include tablet {
+        height: 3em;
+    }
+
+    @include desktop {
+        height: 3.6em;
+    }
 }
 
 .boton {
@@ -180,7 +197,7 @@ img {
     height: 95vh;
     font-style: normal;
     font-weight: 50;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     color: map-get($color, $key: 1);
 }
@@ -191,8 +208,7 @@ img {
 }
 
 .secciones--contenido {
-    font-weight: 500;
-    font-size: 2.8rem;
+    font-size: $fuente-chica;
     color: map-get($color, $key: 1);
 }
 

@@ -1,12 +1,12 @@
 .principal {
-    background-image: url(../assets/img/fondo_movil.png);
+    background-image: url(../assets/img/fondo_movil.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
     @include tablet {
-        background-image: url(../assets/img/fondo.png);
+        background-image: url(../assets/img/fondo.webp);
     }
 }
 

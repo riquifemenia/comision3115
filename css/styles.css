@@ -35,7 +35,7 @@ h1 {
 }
 
 h3 {
-  font-size: 3em;
+  font-size: 2.4em;
 }
 
 p {
@@ -47,7 +47,7 @@ img {
 }
 
 .navbar {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #F0F0F0;
 }
 
@@ -106,17 +106,38 @@ img {
 }
 
 .logo {
-  height: 4rem;
-  margin-left: 3rem;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .logo--investigacion {
-  height: 6rem;
+  height: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .logo--investigacion {
+    height: 5.5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logo--investigacion {
+    height: 6em;
+  }
 }
 
 .logo--viareggio {
-  height: 3rem;
+  height: 2.4rem;
   margin-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .logo--viareggio {
+    height: 3em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logo--viareggio {
+    height: 3.6em;
+  }
 }
 
 .boton, .boton--enviar, .boton--descubrir {
@@ -169,19 +190,18 @@ img {
   height: 95vh;
   font-style: normal;
   font-weight: 50;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   color: #000000;
 }
 
 .secciones__inicio--texto {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #777777;
 }
 
 .secciones--contenido {
-  font-weight: 500;
-  font-size: 2.8rem;
+  font-size: 1.125rem;
   color: #000000;
 }
 
@@ -213,15 +233,15 @@ img {
 }
 
 .fuente--grande {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .fuente--mediana {
-  font-size: 1.6rem;
+  font-size: 1.625rem;
 }
 
 .fuente--chica {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
 }
 
 .animate__animated.animate__fadeIn {
@@ -233,7 +253,7 @@ img {
 }
 
 .principal {
-  background-image: url(../assets/img/fondo_movil.png);
+  background-image: url(../assets/img/fondo_movil.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,7 +261,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .principal {
-    background-image: url(../assets/img/fondo.png);
+    background-image: url(../assets/img/fondo.webp);
   }
 }
 
@@ -262,7 +282,7 @@ img {
   height: 60rem;
   text-align: center;
   font-weight: 50;
-  font-size: 1.6rem;
+  font-size: 1.625rem;
   color: #000000;
 }
 @media screen and (min-width: 768px) {
@@ -313,7 +333,7 @@ img {
 .pie {
   height: auto;
   background-color: #F0F0F0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .pie--elemento {
