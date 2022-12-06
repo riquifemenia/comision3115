@@ -47,11 +47,7 @@ img {
 
 .navbar {
     font-size: $fuente-mediana;
-    color: map-get($color, $key: 3);
-}
-
-.navbar-toggler:hover {
-    background-color: map-get($color, $key: 5);
+    color: map-get($color, $key: 1);
 }
 
 .nav-link {
@@ -69,7 +65,7 @@ img {
 
 .navbar-toggler-icon {
     background-image: none !important;
-    background-color: map-get($color, $key: 2);
+    background-color: map-get($color, $key: 1);
     height: 3px;
     width: 30px;
     margin: 10px 0;
@@ -78,7 +74,7 @@ img {
 
     &::before {
         display: block;
-        background-color: map-get($color, $key: 2);
+        background-color: map-get($color, $key: 1);
         height: 3px;
         content: "";
         position: relative;
@@ -88,7 +84,7 @@ img {
 
     &::after {
         display: block;
-        background-color: map-get($color, $key: 2);
+        background-color: map-get($color, $key: 1);
         height: 3px;
         content: "";
         position: relative;
@@ -98,6 +94,8 @@ img {
 }
 
 .menu {
+    background-color: #11111198;
+
     li {
         display: inline;
         margin-right: 2.5rem;
@@ -118,33 +116,25 @@ img {
 }
 
 .logo {
-    height: 3rem;
-    margin-top: 2rem;
+    height: 3.5rem;
+    margin-top: 1rem;
     margin-left: 2rem;
 }
 
 .logo--investigacion {
-    height: 5rem;
+    height: 5.4rem;
 
     @include tablet {
-        height: 5.5em;
-    }
-
-    @include desktop {
-        height: 6em;
+        height: 4.1em;
     }
 }
 
 .logo--viareggio {
-    height: 2.4rem;
+    height: 3.4rem;
     margin-left: 1rem;
 
     @include tablet {
-        height: 3em;
-    }
-
-    @include desktop {
-        height: 3.6em;
+        height: 2.5em;
     }
 }
 
