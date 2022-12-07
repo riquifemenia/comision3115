@@ -55,7 +55,7 @@ img {
   color: #F0F0F0 !important;
   /*se agrega important para sobreescribir clase de bootstrap*/
   font-weight: bolder;
-  font-size: 1.95rem;
+  font-size: 2.1125rem;
 }
 .nav-link.disabled {
   color: #CFCCDB;
@@ -104,7 +104,7 @@ img {
 }
 .menu li a:hover {
   text-decoration: none;
-  color: #000000;
+  color: #A495B7;
   transition: all 1s;
 }
 
